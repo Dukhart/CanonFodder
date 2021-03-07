@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    [SerializeField] List<GameObject> objects = new List<GameObject>();
-    private List<List<GameObject>> pool = new List<List<GameObject>>();
-    [SerializeField] int amount;
+    [SerializeField] List<GameObject> objects = new List<GameObject>(); // game objects to pool
+    private List<List<GameObject>> pool = new List<List<GameObject>>(); // the pool
+    [SerializeField] int amount; // number of each object to pool
+
     // Start is called before the first frame update
     void Start()
     {
